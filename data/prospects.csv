@@ -1,0 +1,51 @@
+name,city,country,website,menu_url,menu_format,outdated_score,email,phone,notes
+Restaurant Zurich,Zürich,CH,https://www.zurich-restaurant.ch,https://www.zurich-restaurant.ch/menu.pdf,pdf,4,contact@zurich-restaurant.ch,+41 44 123 45 67,"Scanned PDF, no prices"
+Bistro München,München,DE,https://www.muenchen-bistro.de,https://www.muenchen-bistro.de/menu.html,html,4,info@muenchen-bistro.de,+49 89 123 45 67,"Basic HTML menu, single page"
+Café Wien,Wien,AT,https://www.wien-cafe.at,https://www.wien-cafe.at/menu.jpg,image,5,hello@wien-cafe.at,+43 1 123 45 67,"JPEG image, low resolution"
+Sample Restaurant 4,Zürich,CH,https://www.sample-4.com,https://www.sample-4.com/menu.unknown,unknown,4,contact@sample-4.com,+41 123 45 67,Scanned image
+Sample Restaurant 5,Bern,CH,https://www.sample-5.com,https://www.sample-5.com/menu.pdf,pdf,4,contact@sample-5.com,+41 123 45 67,PDF from 2010
+Sample Restaurant 6,Wien,AT,https://www.sample-6.com,https://www.sample-6.com/menu.html,html,4,contact@sample-6.com,+41 123 45 67,PDF from 2010
+Sample Restaurant 7,Wien,AT,https://www.sample-7.com,https://www.sample-7.com/menu.pdf,pdf,4,contact@sample-7.com,+41 123 45 67,Scanned image
+Sample Restaurant 8,München,DE,https://www.sample-8.com,https://www.sample-8.com/menu.image,image,4,contact@sample-8.com,+41 123 45 67,Scanned image
+Sample Restaurant 9,Hamburg,DE,https://www.sample-9.com,https://www.sample-9.com/menu.html,html,4,contact@sample-9.com,+41 123 45 67,No pricing
+Sample Restaurant 10,Bern,CH,https://www.sample-10.com,https://www.sample-10.com/menu.pdf,pdf,4,contact@sample-10.com,+41 123 45 67,No pricing
+Sample Restaurant 11,Wien,AT,https://www.sample-11.com,https://www.sample-11.com/menu.pdf,pdf,4,contact@sample-11.com,+41 123 45 67,No pricing
+Sample Restaurant 12,Wien,AT,https://www.sample-12.com,https://www.sample-12.com/menu.image,image,4,contact@sample-12.com,+41 123 45 67,No pricing
+Sample Restaurant 13,Wien,AT,https://www.sample-13.com,https://www.sample-13.com/menu.html,html,5,contact@sample-13.com,+41 123 45 67,No pricing
+Sample Restaurant 14,München,DE,https://www.sample-14.com,https://www.sample-14.com/menu.unknown,unknown,4,contact@sample-14.com,+41 123 45 67,PDF from 2010
+Sample Restaurant 15,Wien,AT,https://www.sample-15.com,https://www.sample-15.com/menu.image,image,4,contact@sample-15.com,+41 123 45 67,Scanned image
+Sample Restaurant 16,Zürich,CH,https://www.sample-16.com,https://www.sample-16.com/menu.html,html,5,contact@sample-16.com,+41 123 45 67,No pricing
+Sample Restaurant 17,Hamburg,DE,https://www.sample-17.com,https://www.sample-17.com/menu.html,html,4,contact@sample-17.com,+41 123 45 67,No pricing
+Sample Restaurant 18,Bern,CH,https://www.sample-18.com,https://www.sample-18.com/menu.html,html,5,contact@sample-18.com,+41 123 45 67,Scanned image
+Sample Restaurant 19,Bern,CH,https://www.sample-19.com,https://www.sample-19.com/menu.image,image,4,contact@sample-19.com,+41 123 45 67,Scanned image
+Sample Restaurant 20,Hamburg,DE,https://www.sample-20.com,https://www.sample-20.com/menu.html,html,4,contact@sample-20.com,+41 123 45 67,PDF from 2010
+Sample Restaurant 21,Wien,AT,https://www.sample-21.com,https://www.sample-21.com/menu.pdf,pdf,1,contact@sample-21.com,+41 123 45 67,Scanned image
+Sample Restaurant 22,Hamburg,DE,https://www.sample-22.com,https://www.sample-22.com/menu.image,image,2,contact@sample-22.com,+41 123 45 67,Scanned image
+Sample Restaurant 23,Berlin,DE,https://www.sample-23.com,https://www.sample-23.com/menu.html,html,5,contact@sample-23.com,+41 123 45 67,Scanned image
+Sample Restaurant 24,Wien,AT,https://www.sample-24.com,https://www.sample-24.com/menu.image,image,5,contact@sample-24.com,+41 123 45 67,No pricing
+Sample Restaurant 25,Wien,AT,https://www.sample-25.com,https://www.sample-25.com/menu.pdf,pdf,2,contact@sample-25.com,+41 123 45 67,No pricing
+Sample Restaurant 26,Wien,AT,https://www.sample-26.com,https://www.sample-26.com/menu.html,html,1,contact@sample-26.com,+41 123 45 67,PDF from 2010
+Sample Restaurant 27,Hamburg,DE,https://www.sample-27.com,https://www.sample-27.com/menu.unknown,unknown,5,contact@sample-27.com,+41 123 45 67,Scanned image
+Sample Restaurant 28,Wien,AT,https://www.sample-28.com,https://www.sample-28.com/menu.image,image,2,contact@sample-28.com,+41 123 45 67,Scanned image
+Sample Restaurant 29,Berlin,DE,https://www.sample-29.com,https://www.sample-29.com/menu.pdf,pdf,1,contact@sample-29.com,+41 123 45 67,PDF from 2010
+Sample Restaurant 30,München,DE,https://www.sample-30.com,https://www.sample-30.com/menu.pdf,pdf,2,contact@sample-30.com,+41 123 45 67,PDF from 2010
+Sample Restaurant 31,Wien,AT,https://www.sample-31.com,https://www.sample-31.com/menu.image,image,1,contact@sample-31.com,+41 123 45 67,No pricing
+Sample Restaurant 32,Wien,AT,https://www.sample-32.com,https://www.sample-32.com/menu.unknown,unknown,1,contact@sample-32.com,+41 123 45 67,No pricing
+Sample Restaurant 33,Bern,CH,https://www.sample-33.com,https://www.sample-33.com/menu.html,html,2,contact@sample-33.com,+41 123 45 67,PDF from 2010
+Sample Restaurant 34,Wien,AT,https://www.sample-34.com,https://www.sample-34.com/menu.pdf,pdf,3,contact@sample-34.com,+41 123 45 67,Scanned image
+Sample Restaurant 35,Wien,AT,https://www.sample-35.com,https://www.sample-35.com/menu.image,image,1,contact@sample-35.com,+41 123 45 67,Scanned image
+Sample Restaurant 36,Berlin,DE,https://www.sample-36.com,https://www.sample-36.com/menu.pdf,pdf,2,contact@sample-36.com,+41 123 45 67,No pricing
+Sample Restaurant 37,Berlin,DE,https://www.sample-37.com,https://www.sample-37.com/menu.pdf,pdf,4,contact@sample-37.com,+41 123 45 67,Scanned image
+Sample Restaurant 38,München,DE,https://www.sample-38.com,https://www.sample-38.com/menu.html,html,5,contact@sample-38.com,+41 123 45 67,Scanned image
+Sample Restaurant 39,Wien,AT,https://www.sample-39.com,https://www.sample-39.com/menu.unknown,unknown,4,contact@sample-39.com,+41 123 45 67,Scanned image
+Sample Restaurant 40,Wien,AT,https://www.sample-40.com,https://www.sample-40.com/menu.unknown,unknown,5,contact@sample-40.com,+41 123 45 67,PDF from 2010
+Sample Restaurant 41,Wien,AT,https://www.sample-41.com,https://www.sample-41.com/menu.image,image,3,contact@sample-41.com,+41 123 45 67,No pricing
+Sample Restaurant 42,Basel,CH,https://www.sample-42.com,https://www.sample-42.com/menu.unknown,unknown,2,contact@sample-42.com,+41 123 45 67,Scanned image
+Sample Restaurant 43,Bern,CH,https://www.sample-43.com,https://www.sample-43.com/menu.html,html,3,contact@sample-43.com,+41 123 45 67,Scanned image
+Sample Restaurant 44,Wien,AT,https://www.sample-44.com,https://www.sample-44.com/menu.html,html,2,contact@sample-44.com,+41 123 45 67,PDF from 2010
+Sample Restaurant 45,Zürich,CH,https://www.sample-45.com,https://www.sample-45.com/menu.unknown,unknown,2,contact@sample-45.com,+41 123 45 67,No pricing
+Sample Restaurant 46,Wien,AT,https://www.sample-46.com,https://www.sample-46.com/menu.html,html,3,contact@sample-46.com,+41 123 45 67,PDF from 2010
+Sample Restaurant 47,Wien,AT,https://www.sample-47.com,https://www.sample-47.com/menu.pdf,pdf,5,contact@sample-47.com,+41 123 45 67,PDF from 2010
+Sample Restaurant 48,Wien,AT,https://www.sample-48.com,https://www.sample-48.com/menu.image,image,4,contact@sample-48.com,+41 123 45 67,No pricing
+Sample Restaurant 49,Wien,AT,https://www.sample-49.com,https://www.sample-49.com/menu.unknown,unknown,3,contact@sample-49.com,+41 123 45 67,PDF from 2010
+Sample Restaurant 50,München,DE,https://www.sample-50.com,https://www.sample-50.com/menu.html,html,5,contact@sample-50.com,+41 123 45 67,No pricing
