@@ -1,0 +1,25 @@
+Sample Restaurant Menu
+
+Hauptgerichte
+
+Steak au Poivre
+Rindfleisch, Pfeffer-Sauce, Gemüse, Kartoffeln
+CHF 24.50
+
+Wildschwein-Schnitzel
+Schwein, Senf-Sauce, Gemüse, Reis
+CHF 22.00
+
+Geflügel-Curry
+Hühnchen, Curry-Sauce, Gemüse, Reis
+CHF 19.50
+
+Desserts
+
+Tiramisu
+Eier, Kaffee, Schokolade
+CHF 8.00
+
+Apfelstreusel
+Apfel, Zimt, Sauerteig
+CHF 7.50

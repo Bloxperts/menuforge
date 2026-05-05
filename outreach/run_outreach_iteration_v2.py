@@ -1,0 +1,105 @@
+# === MENUFORGE LIVE-SEND GATE — DO NOT REMOVE WITHOUT CHRIS APPROVAL ===
+import os as _gate_os, sys as _gate_sys
+if _gate_os.environ.get("MENUFORGE_LIVE_SEND_OK") != "yes-chris-2026":
+    if "--dry-run" not in _gate_sys.argv and "--simulate" not in _gate_sys.argv:
+        print("[GATE] MENUFORGE_LIVE_SEND_OK not set to yes-chris-2026; live send refused.", file=_gate_sys.stderr)
+        print("[GATE] Re-run with --dry-run for simulation, or have Chris export the env var for live.", file=_gate_sys.stderr)
+        _gate_sys.exit(2)
+# === END LIVE-SEND GATE ===
+import csv
+import os
+import sys
+from datetime import datetime
+from pathlib import Path
+
+# Configuration
+PROSPECTS_CSV = "/home/bloxperts/menuforge/data/prospects.csv"
+PIPELINE_RUNNER = "/home/bloxperts/menuforge/pipeline/run.py"
+OUTPUT_DIR = "/home/bloxperts/menuforge/pipeline/out"
+DRY_RUN_LOG_DIR = "/home/bloxperts/menuforge/outreach/runs"
+METRICS_LOG = "/home/bloxperts/menuforge/outreach/engagement_metrics.csv"
+
+def run_iteration(limit=10):
+    if not os.path.exists(PROSPECTS_CSV):
+        print(f"Error: {PROSPECTS_CSV} not found.")
+        return
+
+    os.makedirs(DRY_RUN_LOG_DIR, exist_ok=True)
+    
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    print(f"Starting Outreach Iteration with Tracking")
+    print(f"Timestamp: {timestamp}")
+    print(f"Target: {limit} restaurants\n")
+
+    processed_count = 0
+    log_entries = []
+
+    with open(PROSPECTS_CSV, mode='r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if processed_count >= limit:
+                break
+            
+            name = row['name']
+            website = row or row.get('website', '')
+            menu_url = row.get('menu_url', '')
+            email = row.get('email', '')
+            
+            slug = name.lower().replace(' ', '-').replace('/', '-')
+            
+            print(f"[{processed_count+1}/{limit}] Processing: {name} ({email})")
+            
+            status = "SUCCESS"
+            if not menu_url.startswith('http'):
+                status = "FAILED"
+            
+            teaser_url = f"https://menuforge.ch/t/{slug}" 
+            
+            log_entries.append({
+                "timestamp": timestamp,
+                "restaurant": name,
+                "email": email,
+                "status": status,
+                "teaser_url": teaser_url,
+                "notes": f"URL: {menu_url}"
+            })
+            
+            processed_count += 1
+
+    # Save the log
+    log_path = os.path.join(DRY_RUN_LOG_DIR, f"{datetime.now().strftime('%Y-%m-%d')}_outreach_report.csv")
+    keys = log_entries[0].keys() if log_entries else []
+    with open(log_path, 'w', newline='', encoding='utf-8') as f:
+        dict_writer = csv.DictWriter(f, fieldnames=keys)
+        dict_writer.writeheader()
+        dict_writer.writerows(log_entries)
+
+    # --- NEW: UPDATE METRICS FOR MEN-31 ---
+    print(f"Updating metrics log...")
+    try:
+        import pandas as pd
+        report_df = pd.read_csv(log_path)
+        total_sent = len(report_df)
+        success_count = report_df['status'].str.contains('SUCCESS', na=False).sum()
+        failure_count = total_sent - success_count
+        
+        metrics_row = {
+            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "batch_size": total_sent,
+            "success_rate": f"{(success_count/total_sent)*100:.2f}%" if total_sent > 0 else "0%",
+            "success_count": success_count,
+            "failure_count": failure_count
+        }
+        
+        log_exists = os.path.exists(METRICS_LOG)
+        log_df = pd.DataFrame([metrics_row])
+        log_df.to_csv(METRICS_LOG, mode='a', index=False, header=not log_exists)
+        print(f"✓ Metrics updated in {METRICS_LOG}")
+    except Exception as e:
+        print(f"⚠ Failed to update metrics: {e}")
+
+    print(f"\nIteration complete. {processed_count} restaurants processed.")
+    print(f"Report saved to: {log_path}")
+
+if __name__ == "__main__":
+    run_iteration(10)

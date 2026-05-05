@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vorschau – Restaurant zur Sonne, Adliswil – MenuForge</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  .preview-shell { max-width: 540px; margin: 0 auto; padding: 24px 16px 64px; }
+  .preview-frame { border: 1px solid var(--line); border-radius: 10px; background: #fff; overflow: hidden; margin-bottom: 24px; }
+  .preview-content { padding: 32px 28px; min-height: 60vh; }
+  .preview-meta { font-size: 13px; color: var(--muted); text-align: center; margin-bottom: 16px; }
+  .preview-cta { text-align: center; margin-top: 32px; padding: 24px 16px; background: #fff; border: 1px solid var(--line); border-radius: 8px; }
+  .preview-cta p { color: var(--muted); margin-bottom: 16px; }
+
+  /* Teaser typography — mirrors pipeline render output */
+  .menu-title { font-family: "Lora", "Playfair Display", Georgia, serif; font-size: 26px; font-weight: 600; text-align: center; margin: 0 0 4px; }
+  .menu-sub { text-align: center; color: var(--muted); font-size: 14px; margin: 0 0 28px; letter-spacing: 0.5px; text-transform: uppercase; }
+  .menu-section-title { font-family: "Lora", serif; font-size: 18px; font-weight: 600; margin: 24px 0 12px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+  .menu-item { display: grid; grid-template-columns: 1fr auto; gap: 16px; padding: 8px 0; align-items: baseline; }
+  .menu-item-name { font-weight: 600; }
+  .menu-item-desc { display: block; font-weight: 400; font-size: 14px; color: var(--muted); margin-top: 2px; }
+  .menu-item-price { font-feature-settings: "tnum" 1; white-space: nowrap; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><a href="../../index.html" style="color:inherit;text-decoration:none;">MenuForge</a></div>
+  <a class="cta-link" href="../../index.html">Startseite</a>
+</header>
+
+<main class="preview-shell">
+  <p class="preview-meta">Vorschau für <strong>Restaurant zur Sonne, Adliswil</strong> · Beispielsektion <em>Hauptgänge</em></p>
+
+  <div class="preview-frame">
+    <div class="preview-content">
+      <h1 class="menu-title">Restaurant zur Sonne</h1>
+      <p class="menu-sub">Adliswil · Hauptgänge</p>
+
+      <h2 class="menu-section-title">Aus der Region</h2>
+
+      <div class="menu-item">
+        <div>
+          <span class="menu-item-name">Zürcher Geschnetzeltes</span>
+          <span class="menu-item-desc">mit Champignons, Rösti und Saisongemüse</span>
+        </div>
+        <span class="menu-item-price">36.50</span>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <span class="menu-item-name">Kalbsbratwurst vom Grill</span>
+          <span class="menu-item-desc">mit Zwiebelsauce und hausgemachten Pommes</span>
+        </div>
+        <span class="menu-item-price">28.00</span>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <span class="menu-item-name">Egli-Filets im Bierteig</span>
+          <span class="menu-item-desc">mit Tartarsauce, Zitrone und Salzkartoffeln</span>
+        </div>
+        <span class="menu-item-price">34.00</span>
+      </div>
+
+      <h2 class="menu-section-title">Vegetarisch</h2>
+
+      <div class="menu-item">
+        <div>
+          <span class="menu-item-name">Älplermagronen</span>
+          <span class="menu-item-desc">mit Apfelmus und gerösteten Zwiebeln</span>
+        </div>
+        <span class="menu-item-price">24.00</span>
+      </div>
+
+      <div class="menu-item">
+        <div>
+          <span class="menu-item-name">Gemüse-Risotto</span>
+          <span class="menu-item-desc">mit Saisongemüse, Parmesan und frischen Kräutern</span>
+        </div>
+        <span class="menu-item-price">26.50</span>
+      </div>
+
+      <p style="margin-top:32px;font-size:13px;color:var(--muted);text-align:center;font-style:italic;">
+        Beispiel-Vorschau · Inhalte aus Ihrer aktuellen Karte, neu gesetzt im MenuForge-Designsystem.
+      </p>
+    </div>
+  </div>
+
+  <div class="preview-cta">
+    <p>Wenn Ihnen die Vorschau gefällt, liefern wir die Vollversion (druckbares PDF + Online-Karte mit QR-Code) für CHF 390 fix in 7 Tagen.</p>
+    <a class="cta-button" href="mailto:roland@menuforge.ch?subject=Beauftragung%20MenuForge%20Vollversion%20-%20Restaurant%20zur%20Sonne">Vollversion bestellen</a>
+    <p style="margin-top:16px;font-size:13px;">
+      Oder kurz antworten — ein 10-Minuten-Telefonat reicht.
+    </p>
+  </div>
+</main>
+
+<footer>
+  <nav>
+    <a href="../../impressum.html">Impressum</a>
+    <span aria-hidden="true">·</span>
+    <a href="../../datenschutz.html">Datenschutz</a>
+  </nav>
+  <p class="footer-note">MenuForge — DACH Restaurant Menu Redesign · Schweiz</p>
+</footer>
+</body>
+</html>

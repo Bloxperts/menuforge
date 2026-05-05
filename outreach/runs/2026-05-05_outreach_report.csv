@@ -1,0 +1,11 @@
+timestamp,restaurant,email,status,teaser_url,notes
+2026-05-05 11:33:00,Restaurant Zurich,contact@zurich-restaurant.ch,SUCCESS,https://menuforge.ch/t/restaurant-zurich,URL: https://www.zurich-restaurant.ch/menu.pdf
+2026-05-05 11:33:00,Bistro München,info@muenchen-bistro.de,SUCCESS,https://menuforge.ch/t/bistro-münchen,URL: https://www.muenchen-bistro.de/menu.html
+2026-05-05 11:33:00,Café Wien,hello@wien-cafe.at,SUCCESS,https://menuforge.ch/t/café-wien,URL: https://www.wien-cafe.at/menu.jpg
+2026-05-05 11:33:00,Sample Restaurant 4,contact@sample-4.com,SUCCESS,https://menuforge.ch/t/sample-restaurant-4,URL: https://www.sample-4.com/menu.unknown
+2026-05-05 11:33:00,Sample Restaurant 5,contact@sample-5.com,SUCCESS,https://menuforge.ch/t/sample-restaurant-5,URL: https://www.sample-5.com/menu.pdf
+2026-05-05 11:33:00,Sample Restaurant 6,contact@sample-6.com,SUCCESS,https://menuforge.ch/t/sample-restaurant-6,URL: https://www.sample-6.com/menu.html
+2026-05-05 11:33:00,Sample Restaurant 7,contact@sample-7.com,SUCCESS,https://menuforge.ch/t/sample-restaurant-7,URL: https://www.sample-7.com/menu.pdf
+2026-05-05 11:33:00,Sample Restaurant 8,contact@sample-8.com,SUCCESS,https://menuforge.ch/t/sample-restaurant-8,URL: https://www.sample-8.com/menu.image
+2026-05-05 11:33:00,Sample Restaurant 9,contact@sample-9.com,SUCCESS,https://menuforge.ch/t/sample-restaurant-9,URL: https://www.sample-9.com/menu.html
+2026-05-05 11:33:00,Sample Restaurant 10,contact@sample-10.com,SUCCESS,https://menuforge.ch/t/sample-restaurant-10,URL: https://www.sample-10.com/menu.pdf

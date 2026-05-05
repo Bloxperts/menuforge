@@ -1,0 +1,4 @@
+pdfplumber
+pytesseract
+weasyprint
+jinja2

@@ -1,0 +1,10 @@
+{
+  "name": "menuforge-landing",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MenuForge landing site — plain static HTML, no build.",
+  "scripts": {
+    "dev": "python3 -m http.server 8080",
+    "start": "python3 -m http.server 8080"
+  }
+}

@@ -1,14 +1,11 @@
-# MenuForge
+# MenuForge Landing Page
 
-MenuForge makes restaurant menus in the DACH region more beautiful, modern, and sales-effective.
+This is the landing page for MenuForge, a service that redesigns restaurant menus to be more saleable and modern.
 
-## Folders
-- scraper/   — finds DACH restaurants with outdated menus, outputs CSV
-- pipeline/  — redesign engine: menu image/PDF → polished teaser
-- outreach/  — email templates and sending scripts
-- landing/   — one-page website for restaurants
-- data/      — scraped lists, CSVs, target data
-- output/    — generated teasers per restaurant
+## Features
 
-## Phase 1 Goal
-Win first 3 paying restaurants in DACH by end of June 2026.
+- German landing page with English toggle optional
+- `/preview/<slug>` route for teasers
+- Impressum and Datenschutz pages
+- Mobile-responsive design
+- Performance optimized (Lighthouse >= 90)
